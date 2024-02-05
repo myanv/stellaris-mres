@@ -1,6 +1,11 @@
+html {
+    width: 100%;
+}
+
 main {
     background-color: #0f141f;
     height: 1700px;
+    overflow-x: hidden;
 }
 
 body {
@@ -11,19 +16,14 @@ body {
     background-color: #0f141f;
 }
 
-.content-body {
-    background-color: #4672bd;
-    height: 1000px;
-    margin: 80px 100px;
-}
 
 .header-container {
     background-image: linear-gradient(rgb(0, 255, 145), rgba(0, 0, 0, 0));
     border-radius: 10px;
     margin: 0 auto;
-    margin-bottom: clamp(0.7rem, 2.5rem, 3rem);
-    width: clamp(20rem, 70vw, 700px);
-    height: 6rem;
+    margin-bottom: 2rem;
+    width: clamp(14rem, 70vw, 700px);
+    height: 7vw;
 }
 
 .top-padding-container {
@@ -39,7 +39,7 @@ body {
     background-position: left bottom, center;
     background-repeat: no-repeat, no-repeat;
     border-radius: 10px;
-    height: 75%;
+    height: 80%;
 }
 
 .background-stripe image {
@@ -48,7 +48,7 @@ body {
 
 @keyframes cycle {
   0% {
-    content: "Innovate,";
+    content: "Explore,";
   }
   33% {
     content: "Construct,";
@@ -57,7 +57,7 @@ body {
     content: "Research,";
   }
   100% {
-    content: "Innovate,";
+    content: "Explore,";
   }
 }
 
@@ -72,43 +72,44 @@ h2.xeno-header::after {
 h2.xeno-header {
     position: relative;
     -webkit-text-fill-color: rgb(255, 255, 255);
-    text-shadow: 5px 7px rgb(28, 28, 41);
-    font-size: clamp(4rem, 8.5vw, 7rem);
+    text-shadow: 0.15rem 0.35rem rgb(28, 28, 41);
+    font-size: clamp(2.5rem, 8.5vw, 7rem);
 }
-
 
 h2.xeno-subheader {
     -webkit-text-fill-color: #77deca;
     font-weight: bold;
-    text-shadow: 5px 7px rgb(28, 28, 41);
+    text-shadow: 0.15rem 0.35rem rgb(28, 28, 41);
     -webkit-text-stroke: 0.1px rgb(216, 242, 255);
-    font-size: clamp(4rem, 8vw, 6.5rem);
+    font-size: clamp(2.5rem, 8vw, 6.5rem);
 }
 
 .xeno-background {
     width: 100%;
     height: 340px;
     background-image: url('https://www.wallpapertip.com/wmimgs/165-1657686_2629299-1920-by-1080-hd-wallpapers-stellaris-desktop.jpg');
-    margin: 0 auto;
     background-size: cover;
     opacity: 62%;
+    display: block;
 }
 
 p {
-    font-size: 30px;
-    line-height: 2; /* margin between lines */
-    letter-spacing: 4px; /* spacing between letters */
-    font-family: 'Space Mono';
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 82%;
 }
 
+p:hover {
+    opacity: 100%;
+}
 
 nav  {
-    width: 100vw;
+    width: 100%;
     height: 60px;
-    background-color: #0f141f;
+    background-color:#0f141f;
 }
 
-@media screen and (max-width: 1004px) {
+@media screen and (max-width: 1020px) {
     div.login-bar {
         display: none;
     }
@@ -117,18 +118,32 @@ nav  {
     }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 720px) {
     div.navbar #nav-buttons {
         display: none;
+    }
+
+    div.content-body {
+        width: 100%;
+    }
+    div.introduction-paragraph {
+        width: 100%;
+    }
+    div.ethos, div.ethos h3 {
+        display: inline-flex;
+        width: 0;
     }
 }
 
 .faction-logo {
     position: absolute;
-    padding-left: 35px;
-    margin-top: 6px;
-    width: 50px; 
-    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 3%;
+    margin-top: 10px;
+    width: 2.5rem; 
+    height: 2.5rem;
 }
 
 .faction-logo img {
@@ -141,7 +156,7 @@ nav  {
 .navbar {
     display: inline-flex;
     width: 58%;
-    padding-left: 80px;
+    padding-left: 5%;
     height: 100%;
     font-family: 'Encode Sans Semi Expanded', sans-serif;
     font-weight: 900;
@@ -214,10 +229,40 @@ h2.xeno-header, h2.xeno-subheader {
     opacity: 82%;
 }
 
-.opacity {
-    width: 100%;
-    height: 340px;
-    position: absolute;
-    background-image: linear-gradient(rgba(255,0,0,0), #5c806d);
+.content-body {
+    background-color: #0f141f;
+    width: 95%;
+    height: 800px;
+    margin: auto;
+    border-radius: 2vw;
+    margin-top: 25px;
+    display: flex;
 }
 
+.introduction-paragraph {
+    width: 42%;
+    height: fit-content;
+    border-bottom: 1px;
+    margin: 15px 0 0 7%;
+    color: #6fb3d2;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.introduction-paragraph:hover {
+    background-color: #101623;
+}
+
+#paragraph-header {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    padding-bottom: 16px;
+    color: #83c6e5;
+    text-shadow: ;
+    opacity: 82%;
+    border-bottom: 2px solid #6fd2cf;
+    background-image: linear-gradient(#10162307, #77dec91d);
+}
+
+#paragraph-header:hover {
+    opacity: 100%;
+}

@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Encode Sans Semi Expanded' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
 </head>
 <body>
     <main>
@@ -36,14 +37,12 @@
             
             <div class="login-bar">
                 <ul id="login-ul">
-                    <li id="login-buttons"><a href="#">LOGIN</a></li>
-                    <li id="login-buttons"><a href="#">REGISTER</a></li>
+                    <li id="login-buttons"><a href="#" title="Login">LOGIN</a></li>
+                    <li id="login-buttons"><a href="#" title="Register">REGISTER</a></li>
                 </ul>
             </div> 
             
         </nav>
-        
-        <div class="opacity"></div>
 
         <div class="xeno-background">
             <div class="top-padding-container"></div>
@@ -55,19 +54,24 @@
                 </div>
             </div>
             <h2 class="xeno-subheader" title="Dyson">with MRES.</h2>
-        <div class="content-body"></div>
+        <div class="content-body">
+            <div class="introduction-paragraph">
+                <h3 id="paragraph-header">Engineering the cosmos</h3>
+                <p>In pursuit of unparalleled scientific and engineering excellence, the Megastructural Research 
+                    and Engineering Science Division, or <b>MRES</b>, dedicates itself to the 
+                    relentless exploration and exploitation of the unknown. Our mission: to <b>engineer the cosmos</b>, 
+                    encasing stars in colossal Dyson megastructures in a testament to Humanity's technological prowess and ambition.</p>
+            </div>
+            </div>
+            <div class="highlights"></div>
+            <div class="newest-publications"></div>
+        </div>
     </main>
 
     <footer>
         <p style="color: #ffff; font-size: 18px; text-align: center;">©Copyright 2020 by nobody. All rights reserved.</p>
     </footer>
 
-    <!--Javascript: placed at the bottom, because it APPLIES to the HTML -->
-    <!--So the HTML loads FIRST-->
-
-    <script>
-        console.log("Hello world!")
-    </script>
     <script src="scripts/main.js"></script> 
 </body>
 </html>
