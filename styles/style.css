@@ -123,15 +123,15 @@ nav  {
         display: none;
     }
 
+    div.introduction-paragraph, div.ethos {
+        width: 90%;
+        margin: 0;
+    }
+
     div.content-body {
         width: 100%;
-    }
-    div.introduction-paragraph {
-        width: 100%;
-    }
-    div.ethos, div.ethos h3 {
-        display: inline-flex;
-        width: 0;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -240,7 +240,7 @@ h2.xeno-header, h2.xeno-subheader {
 }
 
 .introduction-paragraph {
-    width: 42%;
+    width: 52%;
     height: fit-content;
     border-bottom: 1px;
     margin: 15px 0 0 7%;
@@ -254,15 +254,62 @@ h2.xeno-header, h2.xeno-subheader {
 }
 
 #paragraph-header {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
-    padding-bottom: 16px;
-    color: #83c6e5;
-    text-shadow: ;
+    padding-bottom: 15px;
+    border-radius: 10px;
     opacity: 82%;
     border-bottom: 2px solid #6fd2cf;
     background-image: linear-gradient(#10162307, #77dec91d);
 }
 
+#paragraph-header, .ethos {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+    color: #83c6e5;
+    padding-left: 5px;
+}
+
 #paragraph-header:hover {
     opacity: 100%;
+}
+
+.ethos {
+    width: 25%;
+    height: 230px;
+    border-radius: 20px;
+    margin: 15px 0 0 7%;
+    background-color: #131d2e;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.ethos h3 {
+    height: 30px;
+    padding-bottom: 5px;
+}
+
+.ethos img {
+    width: 50px;
+    height: 50px;
+    opacity: 82%;
+}
+
+.ethos img:hover {
+    opacity: 100%;
+}
+
+#materialist {
+    position: relative;
+    left: 60px;
+    bottom: 5px;
+}
+
+#egalitarian {
+    position: relative;
+    right: 55px;
+    top: 60px;
+}
+
+#militarist {
+    position: relative;
+    top: 60px;
 }
