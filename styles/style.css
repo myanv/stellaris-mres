@@ -242,7 +242,7 @@ h2.xeno-header, h2.xeno-subheader {
 .content-body {
     background-color: #0f141f;
     width: 95%;
-    height: 800px;
+    height: fit-content;
     margin: auto;
     border-radius: 2vw;
     margin-top: 25px;
@@ -321,4 +321,52 @@ h2.xeno-header, h2.xeno-subheader {
 #militarist {
     position: relative;
     top: 60px;
+}
+
+.rotating-ring {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    height: 280px;
+    width: 280px;
+    opacity: 92%;
+}
+
+.stnull {
+    fill: #83c6e5;
+}
+
+.stnull:hover {
+    fill: #43c3ff;
+}
+
+.st0, .st1, .st2, .st3 {
+  fill: none;
+  stroke-width: 42;
+  stroke-miterlimit: 10;
+}
+
+.st0 {
+    stroke: #4672bd;
+    stroke-dasharray: 12.1947,12.1947,12.1947,12.1947,12.1947,12.1947;
+}
+
+.st1 {
+    stroke: #6fb3d2;
+    stroke-dasharray: 50,90,10,30,40,0;
+}
+
+.st2 {
+    stroke: #6fd2cf;
+    stroke-linecap: square;
+    stroke-dasharray: 120, 20, 110, 20, 140;
+}
+
+.st3 {
+    stroke: #6fd2cf;
+    stroke-width: 16;
+    stroke-linecap: square;
 }
