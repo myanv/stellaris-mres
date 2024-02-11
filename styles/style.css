@@ -109,6 +109,16 @@ nav  {
     background-color:#0f141f;
 }
 
+@media screen and (max-width: 1232px) {
+    div.ethos {
+        display: none;
+    }
+    div.introduction-paragraph {
+        margin: 10px 5%;
+        width: 40%;
+    }
+}
+
 @media screen and (max-width: 1020px) {
     div.login-bar {
         display: none;
@@ -127,11 +137,11 @@ nav  {
         width: 90%;
         margin: 0;
     }
-
     div.content-body {
         width: 100%;
         flex-direction: column;
         align-items: center;
+        justify-content: start;
     }
 }
 
@@ -237,13 +247,14 @@ h2.xeno-header, h2.xeno-subheader {
     border-radius: 2vw;
     margin-top: 25px;
     display: flex;
+    justify-content: center;
 }
 
 .introduction-paragraph {
-    width: 52%;
+    width: 28%;
     height: fit-content;
     border-bottom: 1px;
-    margin: 15px 0 0 7%;
+    margin: 15px 0 0 0;
     color: #6fb3d2;
     padding: 5px;
     border-radius: 20px;
@@ -272,14 +283,12 @@ h2.xeno-header, h2.xeno-subheader {
 }
 
 .ethos {
-    width: 25%;
+    width: 23%;
     height: 230px;
     border-radius: 20px;
-    margin: 15px 0 0 7%;
+    margin: 60px 50px 0 50px;
     background-color: #131d2e;
-    justify-content: center;
     text-align: center;
-
 }
 
 .ethos h3 {
