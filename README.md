@@ -1,2 +1,2 @@
 # prometheus-page
-A webpage about a fictional Stellaris star empire.
+A webpage about a fictional Stellaris star empire (WIP)
