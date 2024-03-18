@@ -1,11 +1,7 @@
-html {
-    width: 100%;
-}
-
 main {
     background-color: #0f141f;
     height: 1700px;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body {
@@ -339,7 +335,7 @@ svg {
 }
 
 #stnull {
-    fill: #83c6e5;
+    fill: #82c6e6;
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
 }
 
@@ -388,6 +384,7 @@ svg {
 #highlights-bar {
     display: none;
     justify-content: space-evenly;
+    overflow: auto;
     text-align: center;
 }
 
@@ -410,14 +407,15 @@ svg {
     }
 }
 
-@keyframes slide-out {
+@keyframes appear {
     from {
-        opacity: 100%;
-    } to {
-        transform: translateY(-20px);
         opacity: 0%;
+        transform: translateY(20px);
+    } to {
+        opacity: 100%;
     }
 }
+
 .highlights span {
     font-size: 18px;
 }
