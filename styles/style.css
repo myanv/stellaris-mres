@@ -106,12 +106,19 @@ nav  {
 }
 
 @media screen and (max-width: 1232px) {
+    main {
+        height: 1550px;
+    }
     div.ethos {
         display: none;
     }
     div.introduction-paragraph {
         margin: 10px 5%;
         width: 40%;
+    }
+    #highlights-bar {
+        flex-direction: column;
+        overflow: auto;
     }
 }
 
@@ -122,15 +129,12 @@ nav  {
     div.navbar {
         width: 100vw;
     }
-    #highlights-bar {
-        flex-direction: column;
-    }
-    div.highlights {
-        margin-bottom: 25px;
-    }
 }
 
 @media screen and (max-width: 720px) {
+    main {
+        height: 1400px;
+    }
     div.navbar #nav-buttons {
         display: none;
     }
@@ -383,9 +387,9 @@ svg {
 
 #highlights-bar {
     display: none;
-    justify-content: space-evenly;
-    overflow: auto;
+    justify-content: start;
     text-align: center;
+    height: 500px;
 }
 
 #highlights-bar img {
@@ -410,7 +414,7 @@ svg {
 @keyframes appear {
     from {
         opacity: 0%;
-        transform: translateY(20px);
+        transform: translateY(10px);
     } to {
         opacity: 100%;
     }
@@ -429,3 +433,4 @@ svg {
 .highlights span:hover, .highlights span a:hover {
     color:#6fd2cf;
 }
+
