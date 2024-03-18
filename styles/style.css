@@ -5,8 +5,7 @@ main {
 }
 
 body {
-    margin: 0; /* top & bottom (1st), left & right (2nd) */;
-    /* works for both margin and padding */
+    margin: 0;
     font-size: 22px;
     /* top, right, bottom, left in order */
     background-color: #0f141f;
@@ -119,6 +118,8 @@ nav  {
     #highlights-bar {
         flex-direction: column;
         overflow: auto;
+        /* Styling the scrollbar */
+        scrollbar-color: #4ad5ff rgb(45, 56, 79);
     }
 }
 
