@@ -1,2 +1,2 @@
-# prometheus-page
-A webpage about a fictional Stellaris star empire (WIP)
+# Stellaris MRES
+A webpage about a fictional Stellaris star empire, made with HTML/CSS and JavaScript.
